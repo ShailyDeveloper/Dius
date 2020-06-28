@@ -3,6 +3,7 @@ import BowlVal from '../ui/bowlingfields';
 import BowlBut from '../ui/bowlingbutton';
 const BowlHeaders = (props) => {
     let element = []
+
     if (props.showsecond.str1Val !== null && props.showsecond.str1Val !== "10") {
         element.push(<option key={11}>Select</option>)
         for (let index = 0; index < 11 - props.showsecond.str1Val; index++) {
@@ -22,6 +23,8 @@ const BowlHeaders = (props) => {
 
     let str2points = props.showsecond.str2Val ? <option key={props.showsecond.str2Val} value={props.showsecond.str2Val}>{props.showsecond.str2Val}</option> :
         element
+
+
 
     let displaycontrol = props.showsecond.showval ?
         <div>

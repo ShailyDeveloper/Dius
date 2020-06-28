@@ -6,9 +6,9 @@ import '@testing-library/jest-dom';
 
 configure({ adapter: new Adapter() });
 
-describe('DisplayControl', () => {
-    it('should not render the button at the launch');
-    const wrapper = shallow(<BowlHandler></BowlHandler>);
-    expect(wrapper.find(BowlHandler)).toMatchSnapshot();
-
+describe('Bowl Button', () => {
+    it('should match its snapshot', () => {
+        const wrapper = shallow(<BowlHandler></BowlHandler>);
+        expect(wrapper.find(BowlHandler)).toMatchSnapshot();
+    });
 });
