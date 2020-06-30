@@ -1,4 +1,4 @@
-# Dius
+# Bowling Calculator
 A very simple project created in react to calculate the bowling points
 Step : 1  Download the folder Dius
 Step : 2  Open the folder Dius in Visual Studio Code
